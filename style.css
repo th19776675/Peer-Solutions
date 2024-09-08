@@ -1,0 +1,193 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Be Vietnam Pro Thin", sans-serif;
+  color: white;
+  animation: bg-shift var(--hero-loop) infinite;
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --hero-loop: 6s;
+}
+
+.divider {
+  width: 300px;
+  outline: 1px white solid;
+}
+
+h1,h2,h3,p {
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+#email-field {
+  margin-top: 5px;
+  background-color: rgba(255,255, 255, 0);
+  font-family: "Be Vietnam Pro extralight", sans-serif;
+  font-size: 10pt;
+  color: white;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px white solid;
+  /* border-style: none; */
+  /* border-radius: 5px; */
+  resize: none;
+  height: 200px
+}
+
+#email-field:focus {
+outline: white 1px solid;
+}
+
+#hero {
+  /* background: #405966; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 25px;
+}
+
+.email-head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-box {
+  width: 100%;
+  /* background-color: green; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.email-box {
+  width: 100%;
+  height: 50%;
+  /* background-color: blue; */
+  padding: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.email-btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  font-family: "Be Vietnam Pro extralight", sans-serif;
+  font-size: 10pt;
+  padding: 0 10px;
+}
+
+.email-btn:hover, .email-btn:focus {
+  background-color: white;
+}
+ 
+.logo-wrapper {
+  width: 300px;
+  height: 150px;
+  /* background-color: black; */
+  display: flex;
+  /* justify-content: center; */
+}
+
+.email-wrapper {
+  width: 300px;
+  /* height: 200px; */
+  /* background-color: black; */
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+hr {
+  height: 2px;
+  color: white;
+  width: 300px;
+}
+
+.footer {
+  margin: 10px 0 25px 0;
+  font-family: "Be Vietnam Pro extralight", sans-serif;
+  text-align: center;
+  font-size: 8pt;
+}
+
+
+#logo-ps {
+  animation: ps-fade var(--hero-loop) infinite;
+}
+
+#logo-pp {
+  animation: pp-fade var(--hero-loop) infinite;
+}
+
+#logo-pd {
+  animation: pd-fade var(--hero-loop) infinite;
+}
+
+#logo-ps, #logo-pp, #logo-pd {
+  position: absolute;
+  width: 300px;
+}
+
+p {
+  font-size: 10pt;
+}
+
+.peer-head {
+  width:100%;
+}
+
+.box {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes bg-shift {
+  0%   {background-color: #405966;}
+  25%  {background-color: #c15f45;}
+  50%  {background-color: #7A8E91;}
+  100% {background-color: #405966;}
+}
+
+@keyframes ps-fade {
+  0%   {opacity: 1;}
+  25%  {opacity: 0;}
+  50%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes pp-fade {
+  0%   {opacity: 0;}
+  25%  {opacity: 1;}
+  50%  {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes pd-fade {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 1;}
+  100% {opacity: 0;}
+}
