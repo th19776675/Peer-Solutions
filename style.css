@@ -98,7 +98,7 @@ outline: white 1px solid;
   padding: 0 10px;
 }
 
-.email-btn:hover, .email-btn:focus {
+.email-btn:hover {
   background-color: white;
 }
  
