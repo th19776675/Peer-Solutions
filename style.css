@@ -2,10 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body{
   padding: 0;
   margin: 0;
-  font-family: "Be Vietnam Pro Thin", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
   color: white;
   animation: bg-shift var(--hero-loop) infinite;
 } 
@@ -56,13 +58,44 @@ textarea::placeholder {
 outline: white 1px solid;
 }
 
+.email-link {
+  font-size: 12pt;
+  color: white;
+  margin: 35px;
+  text-align: center;
+}
+
+.email-area {
+  text-decoration: none;
+  width: 300px;
+  margin: 20px 0 10px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  font-weight: 100;
+
+}
+
+.popup {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-weight:400;
+  translate: -10px -93px;
+  rotate: -10deg;
+}
+
+.email-area:hover {
+  /* font-family: "be Vietnam Pro "; */
+  font-weight:400;
+}
+
 #hero {
   /* background: #405966; */
   width: 100%;
   height: 100vh;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding: 25px;
 }
@@ -84,9 +117,8 @@ outline: white 1px solid;
 
 .email-box {
   width: 100%;
-  height: 50%;
   /* background-color: blue; */
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -99,7 +131,9 @@ outline: white 1px solid;
   color: white;
   font-family: "Be Vietnam Pro extralight", sans-serif;
   font-size: 10pt;
-  padding: 0 10px;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 30px;
 }
 
 .email-btn:hover {
@@ -130,7 +164,7 @@ hr {
 }
 
 .footer {
-  margin: 10px 0 25px 0;
+  margin: 20px 0 0px 0;
   font-family: "Be Vietnam Pro extralight", sans-serif;
   text-align: center;
   font-size: 8pt;
